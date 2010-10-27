@@ -1,5 +1,6 @@
 export PATH=$HOME/bin:$PATH
 export EDITOR='mate'
+export PS1='\u:\W$(git_branch_for_ps1):)'
 
 # Aliases
 alias gx='gitx --all'

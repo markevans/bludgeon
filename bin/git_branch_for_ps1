@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+res = `git branch --no-color 2>/dev/null`
+if $?.success?
+  branch = res.split("\n").detect{|line|
+    line['*']
+  }[2..-1]
+end
+
+puts "(#{branch})" if branch
