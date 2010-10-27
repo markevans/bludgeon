@@ -1,6 +1,6 @@
 [user]
-	name = Mark Evans
-	email = mark@new-bamboo.co.uk
+  name = Mark Evans
+  email = mark@new-bamboo.co.uk
 [alias]
   st = status
   ci = commit
@@ -8,3 +8,5 @@
   co = checkout
   df = diff
   lg = log -p
+[color]
+	ui = always
