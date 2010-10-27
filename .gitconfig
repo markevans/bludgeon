@@ -1,0 +1,10 @@
+[user]
+	name = Mark Evans
+	email = mark@new-bamboo.co.uk
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+  df = diff
+  lg = log -p
