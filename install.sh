@@ -12,3 +12,5 @@ for file in .ackrc .bash_profile .gemrc .gitconfig bin git-completion.sh; do
   echo "Linking $file"
   ln -s $bludgeon_dir/$file $home_dir
 done
+
+touch $home_dir/.shortcuts.sh

@@ -1,0 +1,18 @@
+toggle_background () {
+  osascript ~/bin/ToggleTerminalSettings.scpt $1
+}
+
+on_exit () {
+  toggle_background "local"
+}
+trap on_exit EXIT
+
+if `echo $@ | grep -q "_s"`
+then
+  toggle_background "staging"
+elif `echo $@ | grep -q "_p"`
+then
+  toggle_background "production"
+fi
+
+/usr/bin/ssh "$@"
