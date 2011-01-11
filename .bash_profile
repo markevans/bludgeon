@@ -10,6 +10,7 @@ alias gci='git commit'
 alias ll='ls -lhGart'
 
 # Git
+export GIT_EDITOR='vim'
 source ~/git-completion.sh
 
 # Shortcuts

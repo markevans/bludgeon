@@ -1,1 +1,5 @@
 --type-add=markdown=.md,.markdown,.mdown
+--type-add=feature=.feature
+--nosql
+--ignore-dir=vendor
+
