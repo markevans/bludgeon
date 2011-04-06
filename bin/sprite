@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+if ARGV.length < 3
+  puts "Usage:"
+  puts "  sprite <file1> <file2>....  <outputFile>"
+  exit
+end
+
+output = ARGV.pop
+inputs = ARGV
+
+cmd = "montage -tile 1x#{inputs.length} -geometry +0+0 #{inputs.join(' ')} #{output}"
+puts cmd
+system cmd

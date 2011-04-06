@@ -1,0 +1,15 @@
+#!/bin/bash
+cmd=$@
+
+if [ "$cmd" == "" ]
+then
+  echo Usage:
+  echo "  loop some command"
+  exit 1
+fi
+
+while [ true ]
+do
+  $cmd
+done
+

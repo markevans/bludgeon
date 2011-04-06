@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ "$(which rspec)" == "" ]
+then
+  gdb --args ruby -S bundle exec spec spec
+else
+  gdb --args ruby -S bundle exec rspec spec
+fi

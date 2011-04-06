@@ -2,4 +2,5 @@
 --type-add=feature=.feature
 --nosql
 --ignore-dir=vendor
+--ignore-dir=public/javascripts/cache
 
