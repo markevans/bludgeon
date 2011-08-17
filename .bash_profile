@@ -1,8 +1,11 @@
 export PATH=$HOME/bin:$PATH
 export EDITOR='mate'
 export PS1='\u: \W$(git_branch_for_ps1) > '
+export NODE_PATH=/usr/local/lib/node:$NODE_PATH
 
 # Aliases
+alias bx='bundle exec'
+alias bxc='bundle exec cucumber'
 alias gx='gitx --all'
 alias gst='git status'
 alias gca='git commit -a'
